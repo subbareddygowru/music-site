@@ -192,3 +192,13 @@ input[type="text"]::placeholder {
     font-size: 1.25rem;
     color: #ffffff;
 }
+
+/* --- SPOTIFY IFRAME FIX --- */
+.card iframe {
+    width: 100%;
+    height: 152px; /* Forces the perfect height for compact players */
+    border: none; /* Kills the ugly white default border */
+    background-color: transparent;
+    display: block;
+    margin-top: 15px; /* Adds a little breathing room below the title */
+}
