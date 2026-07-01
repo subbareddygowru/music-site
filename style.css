@@ -163,14 +163,25 @@ input[type="text"]::placeholder {
 }
 
 /* --- PLAYLIST GRID --- */
+/* --- PLAYLIST GRID --- */
 .grid {
     display: grid;
-    /* This creates a highly responsive grid that automatically adjusts columns based on screen size */
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* Desktop: 2 cards per row */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 24px;
     padding: 40px;
-    max-width: 1200px;
+    max-width: 1000px; /* Constrained width for better focus */
     margin: 0 auto;
+}
+
+/* --- MOBILE RESPONSIVENESS TWEAKS --- */
+@media (max-width: 768px) {
+    .grid {
+        /* Mobile: 1 card per row */
+        grid-template-columns: 1fr; 
+        padding: 20px;
+        gap: 20px;
+    }
 }
 
 .card {
@@ -196,13 +207,15 @@ input[type="text"]::placeholder {
 /* --- SPOTIFY IFRAME FIX --- */
 .card iframe {
     width: 100%;
-    height: 152px; /* Forces the perfect height for compact players */
-    border: none; /* Kills the ugly white default border */
+    /* 380px is often better for standard Spotify embeds to show the full UI */
+    height: 380px; 
+    border: none;
     background-color: transparent;
     display: block;
-    margin-top: 15px; /* Adds a little breathing room below the title */
-} 
-
+    margin-top: 15px;
+    /* This prevents the iframe from showing a white background before loading */
+    background: #181818; 
+}
 /* --- MOBILE RESPONSIVENESS TWEAKS --- */
 @media (max-width: 600px) {
     .hero h1 {
