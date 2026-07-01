@@ -201,4 +201,24 @@ input[type="text"]::placeholder {
     background-color: transparent;
     display: block;
     margin-top: 15px; /* Adds a little breathing room below the title */
+} 
+
+/* --- MOBILE RESPONSIVENESS TWEAKS --- */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2.2rem; /* Shrinks the hero text so it doesn't break lines */
+    }
+
+    .grid {
+        padding: 15px; /* Less padding on mobile to use more screen width */
+        gap: 15px;
+    }
+
+    .card {
+        padding: 15px; /* Compact cards for small screens */
+    }
+
+    .card iframe {
+        height: 152px; /* Maintains the compact player height on phones */
+    }
 }
