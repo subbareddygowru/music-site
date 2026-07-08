@@ -1090,6 +1090,54 @@ main,
 }
 
 
+
+/* ================= CONTACT PAGE ================= */
+
+.contact-container {
+
+    max-width: 850px;
+
+    margin: 70px auto;
+
+    padding: 20px;
+
+}
+
+.contact-card {
+
+    background: #181818;
+
+    border: 1px solid #2b2b2b;
+
+    border-radius: 18px;
+
+    padding: 45px;
+
+}
+
+.contact-card h1 {
+
+    color: #fff;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+}
+
+.contact-intro {
+
+    text-align: center;
+
+    color: #b3b3b3;
+
+    line-height: 1.8;
+
+    font-size: 18px;
+
+    margin-bottom: 45px;
+
+}
 /* Contact Box */
 
 .contact-box {
