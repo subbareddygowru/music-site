@@ -1088,3 +1088,136 @@ main,
     font-size: 18px;
 
 }
+
+
+/* Contact Box */
+
+.contact-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    background: #222;
+
+    border-radius: 16px;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    transition: .3s;
+
+    border: 1px solid transparent;
+
+}
+
+.contact-box:hover {
+
+    border-color: #1DB954;
+
+    transform: translateY(-3px);
+
+}
+
+/* Icon */
+
+.contact-icon {
+
+    width: 70px;
+
+    height: 70px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 32px;
+
+    color: #fff;
+
+}
+
+.email {
+
+    background: #3b82f6;
+
+}
+
+.whatsapp {
+
+    background: #25D366;
+
+}
+
+/* Text */
+
+.contact-info h3 {
+
+    color: #fff;
+
+    margin-bottom: 8px;
+
+}
+
+.contact-info p {
+
+    color: #b3b3b3;
+
+    margin-bottom: 18px;
+
+}
+
+/* Buttons */
+
+.contact-btn {
+
+    display: inline-block;
+
+    background: #3b82f6;
+
+    color: #fff;
+
+    padding: 10px 22px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+.contact-btn:hover {
+
+    opacity: .9;
+
+}
+
+.whatsapp-btn {
+
+    background: #25D366;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px) {
+
+    .contact-box {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+}
