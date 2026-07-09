@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function ()
 {
-
     // Header
     fetch("/includes/header.html")
         .then(response => response.text())
